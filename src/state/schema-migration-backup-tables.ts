@@ -1,3 +1,4 @@
+import { CLIENT_CREDENTIAL_SOURCE_TABLES } from "../infra/client-credential-schema.js";
 import {
   CLIENT_CREDENTIAL_CUTOVER_SCHEMA_VERSION,
   MEETING_TRANSCRIPT_START_TIME_SCHEMA_VERSION,
@@ -21,10 +22,7 @@ export const SCHEMA_MIGRATION_BACKUP_TABLES: Record<
   },
   state: {
     [CLIENT_CREDENTIAL_CUTOVER_SCHEMA_VERSION]: [
-      "device_identities",
-      "device_auth_tokens",
-      "gateway_origin_device_tokens",
-      "exec_approvals_config",
+      ...CLIENT_CREDENTIAL_SOURCE_TABLES,
       "sqlite_stat1",
       "sqlite_stat4",
     ],
