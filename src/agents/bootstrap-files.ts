@@ -52,7 +52,6 @@ function rememberBootstrapWarning(key: string): boolean {
   return true;
 }
 
-/** Resolves the effective bootstrap injection mode for a session agent. */
 export function resolveContextInjectionMode(
   config?: OpenClawConfig,
   agentId?: string | null,
@@ -272,7 +271,6 @@ async function resolveIneligibleAutomaticMemoryFiles(params: {
   );
 }
 
-/** Resolves hook-adjusted, session-filtered bootstrap files for a run. */
 type BootstrapFileResolutionParams = {
   bootstrapUserProfileId?: string;
   workspaceDir: string;
