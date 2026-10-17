@@ -1732,7 +1732,7 @@ describe("openclaw state database", () => {
         "Removed redundant conversation binding target projections (v15)",
         "Replaced retained task indexes with ordered cron history indexes (v24)",
         "Removed redundant replay and skill indexes and narrowed the lease-owner index (v27)",
-        "Migrated shared state tables to SQLite STRICT typing (48)",
+        "Migrated shared state tables to SQLite STRICT typing (46)",
       ],
       warnings: [],
     });
